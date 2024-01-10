@@ -4,7 +4,7 @@ const info = [
     'message': 'Hey Sudeep',
     'time': '3:53 pm',
     'profilePic':
-        'https://picsum.photos/250?image=9',
+        'assets/images/Image2.jpg',
   },
   {
     'name': 'Sudhir Nishad',
