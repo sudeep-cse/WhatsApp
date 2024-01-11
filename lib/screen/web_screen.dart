@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:whatshapp/color.dart';
+import 'package:whatshapp/widgets/chat_list.dart';
 import 'package:whatshapp/widgets/contacts_list.dart';
+import 'package:whatshapp/widgets/web_chat_appbar.dart';
 import 'package:whatshapp/widgets/web_profile_bar.dart';
+import 'package:whatshapp/widgets/web_search_bar.dart';
 
 class WebScreenLayout extends StatelessWidget {
   const WebScreenLayout({Key? key}) : super(key: key);
@@ -10,26 +14,33 @@ class WebScreenLayout extends StatelessWidget {
     return Scaffold(
       body: Row(
         crossAxisAlignment: CrossAxisAlignment.stretch,
-        children:[
+        children: [
           Expanded(
             child: SingleChildScrollView(
               child: Column(
-                children: [
+                children: const [
                   WebProfileBar(),
-                  // web search bar
+                  WebSearchBar(),
                   ContactsList(),
                 ],
               ),
             ),
           ),
           Container(
-            width: MediaQuery.of(context).size.width * 0.7, // Fix the typo here
+            width:
+                MediaQuery.of(context).size.width * 0.66, // Fix the typo here
             decoration: const BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('assets/images/backgroundImage.png'),
-                fit: BoxFit.cover,
-              )
-            )
+                image: DecorationImage(
+              image: AssetImage('assets/images/backgroundImage.png'),
+              fit: BoxFit.cover,
+            )),
+            child: Column(
+              children: [
+                WebChatAppBar(),
+                Expanded(child: ChatList()), //chat list
+                //massege input box
+              ],
+            ),
             // const DecoratedBox(
             //   image: DecorationImage(
             //     image: AssetImage('assets/images/backgroundImage.png'),
