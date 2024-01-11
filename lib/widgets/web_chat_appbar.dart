@@ -18,8 +18,8 @@ class WebChatAppBar extends StatelessWidget {
           Row(
             children: [
               const CircleAvatar(
-                backgroundImage: NetworkImage(
-                    'https://d27jswm5an3efw.cloudfront.net/app/uploads/2019/08/image-url-3.jpg'),
+                backgroundImage: AssetImage(
+                    'assets/images/Image4.jpg'),
                 radius: 30,
               ),
               SizedBox(

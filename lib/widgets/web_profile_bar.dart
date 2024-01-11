@@ -21,8 +21,9 @@ class WebProfileBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           const CircleAvatar(
-            backgroundImage: AssetImage('assets/images/Image4.jpg'),
-            radius: 20,
+            radius: 30,
+            backgroundImage: AssetImage('assets/images/DP_photo.png'),
+            
           ),
           Row(
             children: [

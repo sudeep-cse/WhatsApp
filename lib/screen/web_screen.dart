@@ -39,6 +39,92 @@ class WebScreenLayout extends StatelessWidget {
                 WebChatAppBar(),
                 Expanded(child: ChatList()), //chat list
                 //massege input box
+                Container(
+                  height: MediaQuery.of(context).size.height * 0.08,
+                  padding: const EdgeInsets.all(8),
+                  decoration: const BoxDecoration(
+                    border: Border(
+                      bottom: BorderSide(
+                        color: dividerColor,
+                      ),
+                    ),
+                    color: chatBarMessage,
+                  ),
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(
+                          left: 5,
+                          right: 5,
+                          bottom: 150,
+                          //top: 10,
+                        ),
+                        child: IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.emoji_emotions_outlined,
+                              size: 30,
+                              color: Colors.grey,
+                            )
+                          ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(
+                          //left: 20,
+                          right: 1,
+                          bottom: 150,
+                        ),
+                        child: IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.attach_file,
+                              size: 30,
+                              color: Colors.grey,
+                            ),
+                          ),
+                      ),
+                      Expanded(
+                        child: Padding(
+                          padding: EdgeInsets.only(
+                            left: 20,
+                            right: 15,
+                          ),
+                          child: TextField(
+                            decoration: InputDecoration(
+                              fillColor: searchBarColor,
+                              filled: true,
+                              hintText: 'Type a message',
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(7.5),
+                                borderSide: const BorderSide(
+                                  width: 0,
+                                  style: BorderStyle.none,
+                                ),
+                              ),
+                              contentPadding: const EdgeInsets.only(
+                                left: 20,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(
+                          right: 18,
+                          bottom: 150,
+                        ),
+                        child: IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.mic,
+                                size: 30,
+                                color: Colors.grey,
+                              ),
+                            ),
+                      ),
+                    ],
+                  ),
+                ),
               ],
             ),
             // const DecoratedBox(

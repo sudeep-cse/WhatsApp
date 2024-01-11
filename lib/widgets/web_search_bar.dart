@@ -8,25 +8,30 @@ class WebSearchBar extends StatelessWidget {
     return Container(
       height: MediaQuery.of(context).size.height*0.06,
       width: MediaQuery.of(context).size.width*0.40,
-      padding: const EdgeInsets.all(10),
-      decoration: const BoxDecoration(
-        border: Border(
-           bottom: BorderSide(color: dividerColor),
-
-        ),
+      padding: const EdgeInsets.only(
+        left: 15,
+        right: 50,
+        bottom: 0.5,
+        top: 6,
       ),
+      // decoration: const BoxDecoration(
+      //   border: Border(
+      //      bottom: BorderSide(color: dividerColor),
+
+      //   ),
+      // ),
       child: TextField(
         decoration: InputDecoration(
           filled: true,
           fillColor: searchBarColor,
           prefixIcon: const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20),
+            padding: EdgeInsets.symmetric(horizontal: 20,vertical: 2),
             child: Icon(Icons.search, size: 20,),
           ),
           hintStyle: const TextStyle(fontSize: 14),
           hintText: 'Search or start new chats',
           border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(20),
+            borderRadius: BorderRadius.circular(8),
             borderSide: const BorderSide(
               width: 0,
               style: BorderStyle.none,
@@ -35,6 +40,14 @@ class WebSearchBar extends StatelessWidget {
           contentPadding: const EdgeInsets.all(5),
         ),
       ),
+      // IconButton(
+      //                     onPressed: () {},
+      //                     icon: Icon(
+      //                       Icons.emoji_emotions_outlined,
+      //                       size: 30,
+      //                       color: Colors.grey,
+      //                     )
+      //                   ),               
     );
   }
 }
