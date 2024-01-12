@@ -21,14 +21,14 @@ const info = [
         'https://plus.unsplash.com/premium_photo-1673984259285-ac2152a63f1e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2VifGVufDB8fDB8fHww',
   },
   {
-    'name': 'Dad',
+    'name': 'Pita Ji',
     'message': 'Call me, have some work',
     'time': '12:06 pm',
     'profilePic':
         'https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2VifGVufDB8fDB8fHww',
   },
   {
-    'name': 'Mom',
+    'name': 'Mata Ji',
     'message': 'You ate food?',
     'time': '10:00 am',
     'profilePic':

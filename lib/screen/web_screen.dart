@@ -56,7 +56,7 @@ class WebScreenLayout extends StatelessWidget {
                         padding: const EdgeInsets.only(
                           left: 5,
                           right: 5,
-                          bottom: 150,
+                          bottom: 1,
                           //top: 10,
                         ),
                         child: IconButton(
@@ -72,7 +72,7 @@ class WebScreenLayout extends StatelessWidget {
                         padding: const EdgeInsets.only(
                           //left: 20,
                           right: 1,
-                          bottom: 150,
+                          bottom: 1,
                         ),
                         child: IconButton(
                             onPressed: () {},
@@ -111,7 +111,7 @@ class WebScreenLayout extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.only(
                           right: 18,
-                          bottom: 150,
+                          bottom: 1,
                         ),
                         child: IconButton(
                               onPressed: () {},
