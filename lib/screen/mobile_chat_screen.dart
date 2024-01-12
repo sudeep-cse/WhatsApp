@@ -93,7 +93,7 @@ class MobileChatScreen extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(
                       //right: 1,
-                      //bottom: 1,
+                      bottom: 1,
                     ),
                     child: IconButton(
                       onPressed: () {},
@@ -108,14 +108,14 @@ class MobileChatScreen extends StatelessWidget {
                         padding: const EdgeInsets.only(
                           //left: 1,
                           //right: 1,
-                          //bottom: 1,
+                          bottom: 1,
                           //top: 10,
                         ),
                         child: IconButton(
                             onPressed: () {},
                             icon: Icon(
                               Icons.camera_alt_rounded,
-                              size: 25,
+                              size: 30,
                               color: Colors.grey,
                             )
                           ),
@@ -124,14 +124,14 @@ class MobileChatScreen extends StatelessWidget {
                         padding: const EdgeInsets.only(
                           //left: 20,
                           right: 5,
-                          //bottom: 1,
+                          bottom: 1,
                         
                         ),
                         child: IconButton(
                             onPressed: () {},
                             icon: Icon(
                               Icons.mic,
-                              size: 30,
+                              size:30,
                               color: Colors.grey,
                             ),
                           ),
